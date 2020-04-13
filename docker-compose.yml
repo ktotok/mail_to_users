@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+
+  rabbit:
+    image: rabbitmq:latest
+    ports:
+      - 5672:5672
+    networks:
+      my_network:
+
+#  celery:
+#    build: .
+#    command: celery -A mail_to_users worker -l debug
+#    volumes:
+#      - .:/code
+##    ports:
+##      - "*"
+#    depends_on:
+#      - rabbit
+#    networks:
+#      my_network:
+
+networks:
+   my_network:

@@ -8,6 +8,9 @@ verify_ssl = true
 [packages]
 django = "*"
 celery = "*"
+django-celery-results = "*"
+django-celery-email = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.7"
